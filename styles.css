@@ -1,0 +1,52 @@
+body {
+    background-color: #5C5C5C;
+}
+
+.main-content {
+    background-color: #ffffff;
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.menu-bar {
+    background-color: hotpink;
+}
+
+.section-info {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.left-info {
+    background-image: url('/img/lost-V2.png');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 450px;
+}
+
+.right-info {
+    background-color: lawngreen;
+    width: 750px;
+    height: 450px;
+}
+
+.footer-bar {
+    background-color: lightblue;
+    margin-top: 50px;
+}
+
+.footer-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
