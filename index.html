@@ -12,7 +12,7 @@
 <body>
     <div class="main-content">
         <nav class="menu-bar">
-            <ul>
+            <ul class="highlight">
                 <li>
                     <a href="#">Sobre Nós</a>
                 </li>
@@ -22,11 +22,33 @@
             <section class="left-info">
             </section>
             <section class="right-info">
-                <p>gerador de senha</p>
+                <ul>
+                    <li class="style">
+                        <p>Tamanho da senha:</p>
+                        <input type="radio" name="size" id="6">
+                        <label for="6">6</label>
+                        <input type="radio" name="size" id="8">
+                        <label for="8">8</label>
+                        <input type="radio" name="size" id="10">
+                        <label for="10">10</label>
+                    </li>
+                    <li class="style">
+                        <p>Tipo de senha:</p>
+                        <input type="radio" name="type" id="numeric" >
+                        <label for="numeric">Numérica</label>
+                        <input type="radio" name="type" id="alphabetic">
+                        <label for="alphabetic">Alfabética</label>
+                        <input type="radio" name="type" id="alpha-numeric">
+                        <label for="alpha-numeric">Alfanumérica</label>
+                    </li>
+                    <li>
+                        <input type="button" value="Gerar senha" class="btn">
+                    </li>
+                </ul>
             </section>
         </div>
         <footer class="footer-bar">
-            <ul class="footer-list">
+            <ul class="footer-list highlight">
                 <li>&copy PassGen</li>
                 <li><a href="mailto:faleconosco@passgen.com">Fale conosco</a></li>
             </ul>

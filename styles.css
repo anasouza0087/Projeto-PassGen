@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
 body {
-    background-color: #5C5C5C;
+    background-color: #DADAE7;
 }
 
 .main-content {
@@ -10,7 +13,7 @@ body {
 }
 
 .menu-bar {
-    background-color: hotpink;
+    background-color: #AF0809;
 }
 
 .section-info {
@@ -26,13 +29,12 @@ body {
 }
 
 .right-info {
-    background-color: lawngreen;
     width: 750px;
     height: 450px;
 }
 
 .footer-bar {
-    background-color: lightblue;
+    background-color: #AF0809;
     margin-top: 50px;
 }
 
@@ -49,4 +51,26 @@ ul li {
 
 a {
     text-decoration: none;
+}
+p {
+    padding-top: 18px;
+}
+p, .highlight {
+    font-family: 'Orelega One', cursive;
+    font-size: 24px;
+    color: #000000;
+}
+.style {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+.btn {
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+}
+a:visited, a:link, a:active {
+    color: #000000
 }
