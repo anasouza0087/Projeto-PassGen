@@ -6,6 +6,7 @@ const typeNum = document.getElementById('numeric')
 const typeAlfb = document.getElementById('alphabetic')
 const typeAlfn = document.getElementById('alpha-numeric')
 const btnGerarSenha = document.getElementById('gerarSenha')
+const reset = document.getElementById('apagar')
 
 //Senha tamanho 6
 size6.addEventListener('click', e => {
@@ -20,21 +21,25 @@ size6.addEventListener('click', e => {
     })
 
     typeAlfb.addEventListener('click', e => {
-        const digit = new Array(6)
-        for (let i = 0; i < 1; i++) {
-            digit.push(Math.random().toString(36).replace(/[^a-z]+/g, ''))
+        const digit = 'abcdefghijqlmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXZ'
+        let randomDigits = ''
+        for (let i = 0; i < 6; i++) {
+            randomDigits += digit.charAt(Math.floor(Math.random() * digit.length))
+
             btnGerarSenha.addEventListener('click', e => {
-                password.innerHTML = digit.join(' ')
+                password.innerHTML = randomDigits
             })
         }
     })
 
     typeAlfn.addEventListener('click', e => {
-        const digit = new Array(6)
-        for (let i = 0; i < 1; i++) {
-            digit.push(Math.random().toString(36).replace(/[^A-Za-z0-9]+/g, ''))
+        const digit = 'abcdefghijqlmnopqrstuvxyz123456789ABCDEFGHIJKLMNOPQRSTUVXZ'
+        let randomDigits = ''
+        for (let i = 0; i < 6; i++) {
+            randomDigits += digit.charAt(Math.floor(Math.random() * digit.length))
+
             btnGerarSenha.addEventListener('click', e => {
-                password.innerHTML = digit.join(' ')
+                password.innerHTML = randomDigits
             })
         }
     })
@@ -53,21 +58,24 @@ size8.addEventListener('click', e => {
     })
 
     typeAlfb.addEventListener('click', e => {
-        const digit = new Array(8)
-        for (let i = 0; i < 1; i++) {
-            digit.push(Math.random().toString(36).replace(/[^a-z]+/g, ''))
+        const digit = 'abcdefghijqlmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXZ'
+        let randomDigits = ''
+        for (let i = 0; i < 8; i++) {
+            randomDigits += digit.charAt(Math.floor(Math.random() * digit.length))
+
             btnGerarSenha.addEventListener('click', e => {
-                password.innerHTML = digit.join(' ')
+                password.innerHTML = randomDigits
             })
         }
     })
 
     typeAlfn.addEventListener('click', e => {
-        const digit = new Array(8)
-        for (let i = 0; i < 1; i++) {
-            digit.push(Math.random().toString(36).replace(/[^A-Za-z0-9]+/g, ''))
+        const digit = 'abcdefghijqlmnopqrstuvxyz123456789ABCDEFGHIJKLMNOPQRSTUVXZ'
+        let randomDigits = ''
+        for (let i = 0; i < 8; i++) {
+            randomDigits += digit.charAt(Math.floor(Math.random() * digit.length))
             btnGerarSenha.addEventListener('click', e => {
-                password.innerHTML = digit.join(' ')
+                password.innerHTML = randomDigits
             })
         }
     })
@@ -86,23 +94,30 @@ size10.addEventListener('click', e => {
     })
 
     typeAlfb.addEventListener('click', e => {
-        const digit = new Array(10)
-        for (let i = 0; i < 1; i++) {
-            digit.push(Math.random().toString(36).replace(/[^a-z]+/g, ''))
+        const digit = 'abcdefghijqlmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXZ'
+        let randomDigits = ''
+        for (let i = 0; i < 10; i++) {
+            randomDigits += digit.charAt(Math.floor(Math.random() * digit.length))
             btnGerarSenha.addEventListener('click', e => {
-                password.innerHTML = digit.join(' ')
+                password.innerHTML = randomDigits
             })
         }
     })
 
     typeAlfn.addEventListener('click', e => {
-        const digit = new Array(10)
-        for (let i = 0; i < 1; i++) {
-            digit.push(Math.random().toString(36).replace(/[^A-Za-z0-9]+/g, ''))
+        const digit = 'abcdefghijqlmnopqrstuvxyz123456789ABCDEFGHIJKLMNOPQRSTUVXZ'
+        let randomDigits = ''
+        for (let i = 0; i < 10; i++) {
+            randomDigits += digit.charAt(Math.floor(Math.random() * digit.length))
+
             btnGerarSenha.addEventListener('click', e => {
-                password.innerHTML = digit.join(' ')
+                password.innerHTML = randomDigits
             })
         }
     })
 })
 
+//Reset de dados
+reset.addEventListener('click', e => {
+    location.reload()
+})

@@ -70,7 +70,11 @@ p, .highlight {
     font-size: 16px;
     padding: 12px;
     border-radius: 8px;
+    }
+.btn-erase {
+    margin-left: 20px;
 }
+
 a:visited, a:link, a:active {
     color: #000000
 }
